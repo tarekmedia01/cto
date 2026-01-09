@@ -1,0 +1,151 @@
+.notifications-container {
+  padding: 30px 0;
+}
+
+.notifications-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.notifications-header h1 {
+  color: #1e293b;
+}
+
+.mark-all-read-button {
+  padding: 10px 20px;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.mark-all-read-button:hover {
+  background-color: #2563eb;
+}
+
+.notifications-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.notification-item {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  transition: transform 0.2s;
+}
+
+.notification-item.unread {
+  border-left: 4px solid #3b82f6;
+  background-color: #eff6ff;
+}
+
+.notification-item:hover {
+  transform: translateX(4px);
+}
+
+.notification-content {
+  flex: 1;
+  display: flex;
+  gap: 15px;
+}
+
+.notification-type-badge {
+  padding: 4px 12px;
+  background-color: #e0e7ff;
+  color: #3730a3;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  height: fit-content;
+}
+
+.notification-text h3 {
+  color: #1e293b;
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+}
+
+.notification-text p {
+  color: #4b5563;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.notification-date {
+  color: #9ca3af;
+  font-size: 0.85rem;
+}
+
+.notification-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.mark-read-button,
+.delete-button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+.mark-read-button {
+  background-color: #10b981;
+  color: white;
+}
+
+.mark-read-button:hover {
+  background-color: #059669;
+}
+
+.delete-button {
+  background-color: #ef4444;
+  color: white;
+}
+
+.delete-button:hover {
+  background-color: #dc2626;
+}
+
+.no-notifications {
+  text-align: center;
+  padding: 60px 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.no-notifications p {
+  color: #6b7280;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .notification-item {
+    flex-direction: column;
+  }
+  
+  .notification-actions {
+    flex-direction: row;
+    width: 100%;
+  }
+  
+  .notification-actions button {
+    flex: 1;
+  }
+}
