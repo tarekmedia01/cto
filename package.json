@@ -1,0 +1,27 @@
+{
+  "name": "university-resources-mern",
+  "version": "1.0.0",
+  "description": "University Academic Resource Management System - MERN Stack",
+  "scripts": {
+    "server": "cd server && npm start",
+    "client": "cd client && npm start",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "install-all": "npm install && cd server && npm install && cd ../client && npm install",
+    "build": "cd client && npm run build"
+  },
+  "keywords": [
+    "university",
+    "education",
+    "resources",
+    "mern",
+    "mongodb",
+    "express",
+    "react",
+    "nodejs"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.1"
+  }
+}
